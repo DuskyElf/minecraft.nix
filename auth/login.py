@@ -16,27 +16,16 @@ def get_mc_token_from_ms_token(ms_token):
 
 
 def login_and_get_profile():
-    info("Logging in with Microsoft account.")
-    (ms_token, refresh_token) = get_ms_token()
-    mc_token = get_mc_token_from_ms_token(ms_token)
-
-    info("Determining game ownership.")
-    if check_ownership(mc_token):
-        profile = get_profile(mc_token)
-        profile['mc_token'] = mc_token
-        profile['refresh_token'] = refresh_token
-        return profile
-    else:
-        raise AuthFailed("User does not own the game")
-
+    profile = {
+        "username": "DuskyElf",
+        "password": "abcd",
+        "mc_token": "abcd",
+        "refresh_token": "abcd",
+    }
+    return profile
 
 def refresh(profile):
-    info("Logging in with Microsoft refresh token.")
-    (new_ms_token, new_refresh_token) = refresh_ms_token(profile['refresh_token'])
-    new_mc_token = get_mc_token_from_ms_token(new_ms_token)
-    profile['mc_token'] = new_mc_token
-    profile['refresh_token'] = new_refresh_token
-
+    return
 
 def custom_encode(obj):
     if isinstance(obj, Token):
