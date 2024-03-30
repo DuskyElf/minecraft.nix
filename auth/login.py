@@ -18,13 +18,20 @@ def get_mc_token_from_ms_token(ms_token):
 def login_and_get_profile():
     profile = {
         "username": "DuskyElf",
+        "name": "DuskyElf",
+        "id": "57cdcfa5307e4da28c5e146eaeb823a8",
+        "uuid": "57cdcfa5307e4da28c5e146eaeb823a8",
         "password": "abcd",
         "mc_token": "abcd",
         "refresh_token": "abcd",
     }
+
+    
     return profile
 
 def refresh(profile):
+
+    
     return
 
 def custom_encode(obj):
