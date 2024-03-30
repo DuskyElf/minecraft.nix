@@ -136,11 +136,9 @@ in {
           deps = [ "parseRunnerArgs" ];
           text = let json = "${jq}/bin/jq --raw-output";
           in ''
-            ${ensureAuth} --profile "$PROFILE"
-
-            UUID=$(${json} '.["id"]' "$PROFILE")
-            USER_NAME=$(${json} '.["name"]' "$PROFILE")
-            ACCESS_TOKEN=$(${json} '.["mc_token"]["__value"]' "$PROFILE")
+            UUID=57cdcfa5307e4da28c5e146eaeb823a8
+            USER_NAME=DuskyElf
+            ACCESS_TOKEN=abcd
           '';
         };
       };
