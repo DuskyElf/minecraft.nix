@@ -9,7 +9,7 @@ Inspired by [this thread](https://discourse.nixos.org/t/minecraft-launcher-in-pu
 ## Run Client
 
 ```sh
-$ nix run github:Ninlives/minecraft.nix#v1_18_1.vanilla.client
+$ nix run github:DuskyElf/minecraft.nix#v1_20_6.vanilla.client
 ```
 
 You will be asked to login before launching the game.
@@ -18,7 +18,7 @@ Only MSA login is supported, since Microsoft has started to migrate all Mojang a
 ## Run Server
 
 ```sh
-$ nix run github:Ninlives/minecraft.nix#v1_18_1.vanilla.server
+$ nix run github:DuskyElf/minecraft.nix#v1_20_6.vanilla.server
 ```
 
 ## Configuration
